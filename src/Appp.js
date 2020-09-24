@@ -13,7 +13,7 @@ function Appp() {
     const uploadData = new FormData()
     uploadData.append('title', title)
     uploadData.append('image', cover, cover.name)
-    axios.post('http://127.0.0.1:8000/api/', uploadData)
+    axios.post('api/', uploadData)
     .then(res => console.log(res))
   }
 

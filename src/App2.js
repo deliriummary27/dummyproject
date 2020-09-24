@@ -10,7 +10,7 @@ export default class App2 extends Component {
 
 
     componentDidMount() {
-    axios.get('http://127.0.0.1:8000/api/')
+    axios.get('api/')
       .then(res => {
         return this.setState({
           things: res.data
