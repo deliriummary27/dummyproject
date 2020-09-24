@@ -21,9 +21,9 @@ class ImageViewset(viewsets.ModelViewSet):
 class FrontendAppView(View):
 
     def get(self, request):
-            print (os.path.join(settings.REACT_APP_DIR, 'build', 'index.html'))
+            print (os.path.join(settings.BASE_DIR, 'build', 'index.html'))
             try:
-                with open(os.path.join(settings.REACT_APP_DIR, 'build', 'index.html')) as f:
+                with open(os.path.join(settings.BASE_DIR, 'build', 'index.html')) as f:
                     return HttpResponse(f.read())
             except FileNotFoundError:
                 logging.exception('Production build of app not found')
