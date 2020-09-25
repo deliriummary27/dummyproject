@@ -10,7 +10,7 @@ export default class App2 extends Component {
 
 
     componentDidMount() {
-    axios.get('/api/')
+    fetch('/api/')
       .then(res => {
         return this.setState({
           things: res.data
