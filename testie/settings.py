@@ -25,7 +25,7 @@ SECRET_KEY = 'sxrr)uqb&en=8_n^#o_hjgr-r&7p@em%$wrvrr6a9t1pna!!0w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://deliriummary.pythonanywhere.com/']
 
 
 # Application definition
